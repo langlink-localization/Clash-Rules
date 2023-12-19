@@ -1,0 +1,684 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+
+proxy-providers:
+  美国:
+    type: http
+    path: ./proxy/us.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bUS[P]?\b|United States|美国|us)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  日本:
+    type: http
+    path: ./proxy/jp.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bJP[P]?\b|Japan|日本|jp)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  香港:
+    type: http
+    path: ./proxy/hk.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bHK[P]?\b|Hong Kong|香港|hk)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  台湾:
+    type: http
+    path: ./proxy/tw.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bTW[P]?\b|Taiwan|台湾|tw)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  韩国:
+    type: http
+    path: ./proxy/kr.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bKR[P]?\b|Korea|韩国|kr)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  新加坡:
+    type: http
+    path: ./proxy/sg.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bSG[P]?\b|Singapore|新加坡|sg)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  英国:
+    type: http
+    path: ./proxy/uk.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bUK[P]?\b|United Kingdom|英国|uk)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  德国:
+    type: http
+    path: ./proxy/de.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bDE[P]?\b|Germany|德国|de)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  阿根廷:
+    type: http
+    path: ./proxy/ar.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bAR[P]?\b|Argentina|阿根廷|ar)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  土耳其:
+    type: http
+    path: ./proxy/tr.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bTR[P]?\b|Turkey|土耳其|tr)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  加拿大:
+    type: http
+    path: ./proxy/ca.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ss&provider=clash
+    interval: 7200
+    filter: '(?i:\bCA[P]?\b|Canada|加拿大|ca)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  印度:
+    type: http
+    path: ./proxy/in.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ssr&provider=clash
+    interval: 7200
+    filter: '(?i:\bIN[P]?\b|India|印度|in)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  泰国:
+    type: http
+    path: ./proxy/th.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ssr&provider=clash
+    interval: 7200
+    filter: '(?i:\bTH[P]?\b|Thailand|泰国|th)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  俄罗斯:
+    type: http
+    path: ./proxy/ru.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ssr&provider=clash
+    interval: 7200
+    filter: '(?i:\bRU[P]?\b|Russia|俄罗斯|ru)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  澳大利亚:
+    type: http
+    path: ./proxy/au.list
+    url: https://dler.cloud/subscribe/ZuydeNgb8viQxqKzPwt6?protocols=ssr&provider=clash
+    interval: 7200
+    filter: '(?i:\bAU[P]?\b|Australia|澳大利亚|au)'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+proxies:
+  - name: "临时应急节点"
+    type: ss
+    server: c88s1.jjcruises.com
+    port: 8269
+    cipher: aes-256-gcm
+    password: "94BTyCKBrGW8hxnC"
+    udp: true
+
+  - name: WARP+
+    type: wireguard
+    server: 162.159.192.197
+    port: 968
+    ip: 172.16.0.2
+    private-key: WMOxiwJx+fTU9fSQNB4L8jS3Fv8dgvOokBreWT2wSVg=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    udp: true
+    reserved: [0, 0, 0]
+    remote-dns-resolve: true
+    dns: [1.1.1.1, 8.8.8.8]
+    dialer-proxy: "前置节点"
+
+proxy-groups:
+  - name: 前置节点
+    type: select
+    proxies:
+      - 临时应急节点 #自建节点的名称
+      - 指定默认线路
+      - 自动选择
+
+  - name: 指定默认线路
+    type: select
+    proxies:
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+      - 临时应急节点
+      - WARP+
+
+  - name: 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+      - 临时应急节点
+      - WARP+
+
+  - name: LangLink自定义名单
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+
+  - name: Disney、Netflix
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+
+  - name: 微软、谷歌、苹果
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+
+  - name: OpenAI
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+
+  - name: Steam
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+
+  - name: PayPal
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+
+  - name: 不走代理
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 自定义白名单
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 漏网之鱼
+    type: select
+    proxies:
+      - 指定默认线路
+      - 自动选择
+      - DIRECT
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇩🇪 德国
+      - 🇦🇷 阿根廷
+      - 🇹🇷 土耳其
+      - 🇨🇦 加拿大
+      - 🇮🇳 印度
+      - 🇹🇭 泰国
+      - 🇷🇺 俄罗斯
+      - 🇦🇺 澳大利亚
+      - DIRECT
+
+  - name: 🇺🇸 美国
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 美国
+
+  - name: 🇯🇵 日本
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 日本
+
+  - name: 🇭🇰 香港
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 香港
+
+  - name: 🇨🇳 台湾
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 台湾
+
+  - name: 🇰🇷 韩国
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 韩国
+
+  - name: 🇸🇬 新加坡
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 新加坡
+
+  - name: 🇬🇧 英国
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 英国
+
+  - name: 🇩🇪 德国
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 德国
+
+  - name: 🇦🇷 阿根廷
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 阿根廷
+
+  - name: 🇹🇷 土耳其
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 土耳其
+
+  - name: 🇨🇦 加拿大
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 加拿大
+
+  - name: 🇮🇳 印度
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 印度
+
+  - name: 🇹🇭 泰国
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 泰国
+
+  - name: 🇷🇺 俄罗斯
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 俄罗斯
+
+  - name: 🇦🇺 澳大利亚
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - 澳大利亚
+
+rule-providers:
+  自定义白名单:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/warecast@955ccd0130de0e6c032b016085d130f4/raw
+    path: ./rules/whitelist.yaml
+    interval: 86400
+
+  langlink:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/warecast@69d58733151d785fec2aa22896adb78e/raw
+    path: ./rules/langlink.yaml
+    interval: 86400
+
+  disney:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Disney/Disney.yaml
+    path: ./rules/disney.yaml
+    interval: 86400
+
+  netfliyx:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml
+    path: ./rules/netfliyx.yaml
+    interval: 86400
+
+  youtube:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml
+    path: ./rules/youtube.yaml
+    interval: 86400
+
+  微软:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml
+    path: ./rules/microsoft.yaml
+    interval: 86400
+
+  openai:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./rules/openai.yaml
+    interval: 86400
+
+  claude:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.yaml
+    path: ./rules/claude.yaml
+    interval: 86400
+
+  谷歌:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml
+    path: ./rules/google.yaml
+    interval: 86400
+
+  fcm:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GoogleFCM/GoogleFCM.yaml
+    path: ./rules/fcm.yaml
+    interval: 86400
+
+  steam:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml
+    path: ./rules/steam.yaml
+    interval: 86400
+
+  paypal:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/PayPal/PayPal.yaml
+    path: ./rules/paypal.yaml
+    interval: 86400
+
+  苹果:
+    type: http
+    behavior: domain
+    url: https://jsd.cdn.zzko.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AppleProxy/AppleProxy.yaml
+    path: ./rules/apple.yaml
+    interval: 86400
+
+  reject:
+    type: http
+    behavior: domain
+    url: "https://jsd.cdn.zzko.cn/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://jsd.cdn.zzko.cn/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://jsd.cdn.zzko.cn/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://jsd.cdn.zzko.cn/gh/Loyalsoldier/clash-rules@release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://jsd.cdn.zzko.cn/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://jsd.cdn.zzko.cn/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,proxy,LangLink自定义名单
+  - RULE-SET,langlink,LangLink自定义名单
+  - RULE-SET,disney,Disney、Netflix
+  - RULE-SET,netfliyx,Disney、Netflix
+  - RULE-SET,openai,OpenAI
+  - RULE-SET,claude,OpenAI
+  - RULE-SET,微软,微软、谷歌、苹果
+  - RULE-SET,youtube,微软、谷歌、苹果
+  - RULE-SET,谷歌,微软、谷歌、苹果
+  - RULE-SET,苹果,微软、谷歌、苹果
+  - RULE-SET,steam,Steam
+  - RULE-SET,paypal,PayPal
+  - RULE-SET,fcm,DIRECT
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,cncidr,DIRECT,no-resolve
+  - RULE-SET,自定义白名单,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,漏网之鱼
