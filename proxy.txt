@@ -3,3 +3,4 @@ payload:
   - 'xtm-cloud.com'
   - 'xtm-intl.com'
   - 'xtrf.eu'
+  - 'garmin.com'
