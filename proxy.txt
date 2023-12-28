@@ -1,6 +1,6 @@
 payload:
-  - '.welocalize.com'
-  - '.xtm-cloud.com'
-  - '.xtm-intl.com'
-  - '.xtrf.eu'
-  - '.garmin.com'
+  - '+.welocalize.com'
+  - '+.xtm-cloud.com'
+  - '+.xtm-intl.com'
+  - '+.xtrf.eu'
+  - '+.garmin.com'
