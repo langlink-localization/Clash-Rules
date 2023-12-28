@@ -1,4 +1,4 @@
 payload:
-   - 'garmin.cn'
+   - '.garmin.cn'
    - 'gspe*-cn-ssl.ls.apple.com'
-   - 'csoftintl.com.cn'
+   - '.csoftintl.com.cn'
